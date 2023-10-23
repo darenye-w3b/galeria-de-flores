@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header h1{
+    font-family: 'Bad Script', cursive;
+    text-align: center;
+    background-color: #f0f7effa;
+    padding: 10px;
+    color: #cf4ddafa;
+}
+
+main{
+    background-color: #f0f7effa;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 30vh);
+    gap: 15px;
+    padding: 5px;
+    grid-template-areas: 
+    "img1 img2 img3"
+    "img4 img5 img5"
+    "img6 img5 img5"
+    ;
+}
+
+.contenedor div{
+    height: auto;
+}
+
+.contenedor div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-uno{
+    grid-area: img1;
+}
+
+.img-dos{
+    grid-area: img2;
+}
+
+.img-tres{
+    grid-area: img3;
+}
+
+.img-cuatro{
+    grid-area: img4;
+}
+
+.img-cinco{
+    grid-area: img5;
+}
+
+.img-seis{
+    grid-area: img6;
+}
+
+
